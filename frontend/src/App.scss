@@ -1,0 +1,30 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+.App {
+  height: 100%;
+  &-container {
+    background: $off-white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &-header {
+    background: $header-background;
+    min-height: 60px;
+    margin-bottom: 2px;
+  }
+  &-body {
+    background: $body-background;
+    min-height: calc(100% - 124px);
+  }
+  &-footer {
+    background: $footer-background;
+    min-height: 60px;
+    margin-top: 2px;
+    @include sm {
+      min-height: 80px;
+    }
+  }
+}
