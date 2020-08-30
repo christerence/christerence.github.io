@@ -8,6 +8,7 @@ import {
   faFolder,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 function Header() {
   const [menu, toggleMenu] = useState(false);
   const [opened, toggleOpened] = useState(false);
@@ -40,57 +41,57 @@ function Header() {
         }`}
       >
         <div className="Header-options Header-options--popup">
-          <div className="Header-option Header-option--popup">
+          <Link to="/" className="Header-option Header-option--popup">
             <div className="Header-label">Home</div>
             <div className="Header-icon">
               <FontAwesomeIcon icon={faHome} />
             </div>
-          </div>
-          <div className="Header-option Header-option--popup">
+          </Link>
+          <Link to="about" className="Header-option Header-option--popup">
             <div className="Header-label">About</div>
             <div className="Header-icon">
               <FontAwesomeIcon icon={faUserCircle} />
             </div>
-          </div>
-          <div className="Header-option Header-option--popup">
+          </Link>
+          <Link to="contact" className="Header-option Header-option--popup">
             <div className="Header-label">Contact</div>
             <div className="Header-icon">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
-          </div>
-          <div className="Header-option Header-option--popup">
+          </Link>
+          <Link to="projects" className="Header-option Header-option--popup">
             <div className="Header-label">Projects</div>
             <div className="Header-icon">
               <FontAwesomeIcon icon={faFolder} />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="Header-options Header-options--desktop">
-        <div className="Header-option">
+        <Link to="/" className="Header-option">
           <div className="Header-icon">
             <FontAwesomeIcon icon={faHome} />
           </div>
           <div className="Header-label">Home</div>
-        </div>
-        <div className="Header-option">
+        </Link>
+        <Link to="about" className="Header-option">
           <div className="Header-icon">
             <FontAwesomeIcon icon={faUserCircle} />
           </div>
           <div className="Header-label">About</div>
-        </div>
-        <div className="Header-option">
+        </Link>
+        <Link to="contact" className="Header-option">
           <div className="Header-icon">
             <FontAwesomeIcon icon={faEnvelope} />
           </div>
           <div className="Header-label">Contact</div>
-        </div>
-        <div className="Header-option">
+        </Link>
+        <Link to="projects" className="Header-option">
           <div className="Header-icon">
             <FontAwesomeIcon icon={faFolder} />
           </div>
           <div className="Header-label">Projects</div>
-        </div>
+        </Link>
       </div>
     </header>
   );
