@@ -70,7 +70,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: $off-white;
+    background: $black;
     height: 0;
     @include sm {
       display: none;
@@ -101,7 +101,7 @@
       }
     }
     &--desktop {
-      margin-right: 20px;
+      margin-right: 16px;
       display: none;
       @include sm {
         display: flex;
@@ -142,7 +142,9 @@
       width: 100px;
       margin: 8px;
       justify-content: space-around;
+      color: $white;
       &:hover {
+        color: $black;
         background: $white;
       }
     }
