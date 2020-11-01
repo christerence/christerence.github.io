@@ -3,9 +3,7 @@ import "./Contact.scss";
 function About() {
   return (
     <div className="Contact Contact-container">
-      <div>
-          contact
-      </div>
+
     </div>
   );
 }

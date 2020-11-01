@@ -30,6 +30,7 @@
   &-preview {
     @include flex-center;
     height: 80px;
+    font-size: 14px;
   }
   &-navigation {
     @include flex-center;

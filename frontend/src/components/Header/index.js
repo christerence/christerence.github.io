@@ -53,7 +53,7 @@ function Header() {
               <FontAwesomeIcon icon={faUserCircle} />
             </div>
           </Link>
-          <Link to="projects" className="Header-option Header-option--popup">
+          {/* <Link to="projects" className="Header-option Header-option--popup">
             <div className="Header-label">Projects</div>
             <div className="Header-icon">
               <FontAwesomeIcon icon={faFolder} />
@@ -64,7 +64,7 @@ function Header() {
             <div className="Header-icon">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="Header-options Header-options--desktop">
@@ -80,7 +80,7 @@ function Header() {
           </div>
           <div className="Header-label">About</div>
         </Link>
-        <Link to="projects" className="Header-option">
+        {/* <Link to="projects" className="Header-option">
           <div className="Header-icon">
             <FontAwesomeIcon icon={faFolder} />
           </div>
@@ -91,7 +91,7 @@ function Header() {
             <FontAwesomeIcon icon={faEnvelope} />
           </div>
           <div className="Header-label">Contact</div>
-        </Link>
+        </Link> */}
       </div>
     </header>
   );
