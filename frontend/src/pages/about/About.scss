@@ -1,0 +1,31 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+.About {
+  background-image: url("../../assets/logo.png");
+  background-position: center;
+  background-size: cover;
+
+  @include md {
+    background-position: top;
+  }
+  &-container {
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.1);
+  }
+  &-info {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &-infoIcon {
+    margin: 5px;
+    cursor: pointer;
+  }
+  &-infoText {
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+  }
+}

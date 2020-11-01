@@ -1,0 +1,35 @@
+@mixin xs {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xlg {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(194, 194, 194, 1);
+  box-shadow: 0px 0px 2px 2px rgba(194, 194, 194, 1);
+}
